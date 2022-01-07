@@ -1,3 +1,0 @@
-action: GLOB, msg: packaging
-cwd: C:\Users\albertLo\Desktop\mine\recommenderSystem
-cmd: 'C:\Users\albertLo\Anaconda3\python.exe' setup.py sdist --formats=zip --dist-dir 'C:\Users\albertLo\Desktop\mine\recommenderSystem\.tox\dist'
