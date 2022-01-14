@@ -1,0 +1,12 @@
+{
+	"appname": "recommender_engine",
+	"configuration":[
+	{
+		"ENV": "development",
+		"data_source": "LocalFile"
+	},
+	{
+		"ENV": "uat",
+		"data_source": "DB"
+	}]
+}

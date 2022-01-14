@@ -1,12 +1,12 @@
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 from recommenderSystem.controller import predict
-from starlette.staticfiles import StaticFiles
-from pathlib import Path
+from recommenderSystem.config import appconfigs
+
+
 
 
 app = FastAPI()
-
 app.include_router(predict.router)  # This is my note page
 
 
@@ -17,4 +17,6 @@ app.include_router(predict.router)  # This is my note page
 
 @app.get("/")
 def root():
-    return {'message': 'Hello world'}
+    settings=Settings()
+    return {'message': 'Hello world',
+            'env': settings.env}

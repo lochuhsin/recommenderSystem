@@ -39,7 +39,7 @@ def get_user_preference(inputs: user_data):
     converted = _convert_user_input(inputs.dict())
 
 
-def _convert_user_input(inputs) -> 'user model'
+def _convert_user_input(inputs) -> 'user model':
     user_list = inputs['users']
     user_id_list = [i['user_id'] for i in user_list]
     method = inputs['method']
