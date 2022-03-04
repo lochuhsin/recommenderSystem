@@ -16,6 +16,4 @@ RUN echo $ENV
 
 COPY ./recommenderSystem /code/recommenderSystem
 
-CMD ["export", "ENV=uat"]
-
 CMD ["uvicorn", "recommenderSystem.main:app","--host", "0.0.0.0", "--port", "80"]
